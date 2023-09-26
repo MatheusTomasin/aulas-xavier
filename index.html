@@ -1,16 +1,185 @@
-<html>
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <link rel="stylesheet" href="styles/pages/index.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Music Player App</title>
+  </head>
+  <body>
+    <header class="menu-bar">
+      <div class="menu-bar__left">
+        <a href="#">
+          <img src="assets/icons/menu.svg" alt="Menu" />
+        </a>
+        <h3 class="menu-bar__title">Music Player</h3>
+      </div>
+      <div class="menu-bar__right">
+        <a class="menu-bar__search" href="#">
+          <img src="assets/icons/search.svg" alt="Procurar" />
+        </a>
+      </div>
+    </header>
 
-<head>
-	<title>Labirinto</title>
-</head>
+    <section class="categories">
+      <h2 class="section-title">Navegue por categoria</h2>
+      <ul class="categories__list">
+        <li class="categories__item">
+          <div class="categories__icon categories__icon--podcasts">
+            <img src="assets/icons/podcasts.svg" alt="Podcasts" />
+          </div>
+          <p class="categories__text">Podcasts</p>
+        </li>
+        <li class="categories__item">
+          <div class="categories__icon categories__icon--rock">
+            <img src="assets/icons/rock.svg" alt="Rock" />
+          </div>
+          <p class="categories__text">Rock</p>
+        </li>
+        <li class="categories__item">
+          <div class="categories__icon categories__icon--pagode">
+            <img src="assets/icons/pagode.svg" alt="Pagode" />
+          </div>
+          <p class="categories__text">Pagode</p>
+        </li>
+        <li class="categories__item">
+          <div class="categories__icon categories__icon--all">
+            <img src="assets/icons/plus.svg" alt="Ver mais" />
+          </div>
+          <p class="categories__text">Ver todas</p>
+        </li>
+      </ul>
+    </section>
 
-<body>
-	Altura: <input id="altura" value="20"></input><br/>
-	Largura: <input id="largura" value="20"></input><br/>
-	<button id="gerar" onclick="gerar()">Gerar labirinto!</button>
-	<button id="imprimir" onclick="window.print()">Imprimir!</button><br/>
-  	<pre id="out"></pre>
-	<script type="text/javascript" src="labirinto.js"></script>
-</body>
+    <section class="recent-playlist">
+      <h2 class="section-title">Playlists recentes</h2>
+      <ul class="playlists">
+        <a href="playlist.html">
+          <li class="playlist-card">
+            <img
+              class="playlist-card__img"
+              src="assets/images/playlist-cover1.png"
+              alt="Jota Quest"
+            />
+            <div class="playlist-card__caption">
+              <h3 class="playlist-card__title">Acústico Jota Quest</h3>
+              <p class="paragraph-2 playlist-card__info">
+                Jota Quest <span class="dot"></span> 6 músicas
+              </p>
+            </div>
+          </li>
+        </a>
+        <ul class="playlists__row">
+          <a>
+            <li class="playlist-card playlist-card--small">
+              <img
+                class="playlist-card__img--small"
+                src="assets/images/playlist-cover2.png"
+                alt="Jota Quest"
+              />
+              <div class="playlist-card__caption--small">
+                <h4 class="playlist-card__title">
+                  The Total Johnny Cash Sun Collection
+                </h4>
+                <p class="paragraph-2 playlist-card__info">Jonny Cash</p>
+              </div>
+            </li>
+          </a>
+          <a>
+            <li class="playlist-card playlist-card--small">
+              <img
+                class="playlist-card__img--small"
+                src="assets/images/playlist-cover3.png"
+                alt="Jota Quest"
+              />
+              <div class="playlist-card__caption--small">
+                <h4 class="playlist-card__title">Chateau Mae Mae</h4>
+                <p class="paragraph-2 playlist-card__info">Vista Kicks</p>
+              </div>
+            </li>
+          </a>
+        </ul>
+      </ul>
 
+      <div class="container">
+        <button class="btn btn--normal">Ver mais</button>
+      </div>
+    </section>
+
+    <section class="weekly-most-listened">
+      <h2 class="section-title">Mais ouvidas da semana</h2>
+      <ul class="playlists">
+        <a href="playlist.html">
+          <li class="playlist-card">
+            <img
+              class="playlist-card__img"
+              src="assets/images/playlist-cover1.png"
+              alt="Jota Quest"
+            />
+            <div class="playlist-card__caption">
+              <h3 class="playlist-card__title">Acústico Jota Quest</h3>
+              <p class="paragraph-2 playlist-card__info">
+                Jota Quest <span class="dot"></span> 6 músicas
+              </p>
+            </div>
+          </li>
+        </a>
+        <a href="playlist.html">
+          <li class="playlist-card">
+            <img
+              class="playlist-card__img"
+              src="assets/images/playlist-cover1.png"
+              alt="Jota Quest"
+            />
+            <div class="playlist-card__caption">
+              <h3 class="playlist-card__title">Acústico Jota Quest</h3>
+              <p class="paragraph-2 playlist-card__info">
+                Jota Quest <span class="dot"></span> 6 músicas
+              </p>
+            </div>
+          </li>
+        </a>
+        <a href="playlist.html">
+          <li class="playlist-card">
+            <img
+              class="playlist-card__img"
+              src="assets/images/playlist-cover1.png"
+              alt="Jota Quest"
+            />
+            <div class="playlist-card__caption">
+              <h3 class="playlist-card__title">Acústico Jota Quest</h3>
+              <p class="paragraph-2 playlist-card__info">
+                Jota Quest <span class="dot"></span> 6 músicas
+              </p>
+            </div>
+          </li>
+        </a>
+        <a href="playlist.html">
+          <li class="playlist-card">
+            <img
+              class="playlist-card__img"
+              src="assets/images/playlist-cover1.png"
+              alt="Jota Quest"
+            />
+            <div class="playlist-card__caption">
+              <h3 class="playlist-card__title">Acústico Jota Quest</h3>
+              <p class="paragraph-2 playlist-card__info">
+                Jota Quest <span class="dot"></span> 6 músicas
+              </p>
+            </div>
+          </li>
+        </a>
+      </ul>
+
+      <div class="container">
+        <button class="btn btn--normal">Ver mais</button>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <hr class="horizontal-line" />
+      <p class="footer-text">Music Player &copy; 2021</p>
+    </footer>
+  </body>
 </html>
